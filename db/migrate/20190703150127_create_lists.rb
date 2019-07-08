@@ -1,0 +1,13 @@
+class CreateLists < ActiveRecord::Migration[5.2]
+  def change
+    create_table :lists do |t|
+      t.string :title
+      t.text :excerpt
+      t.string :description
+      t.string :text
+      t.integer :upvotes
+
+      t.timestamps
+    end
+  end
+end
